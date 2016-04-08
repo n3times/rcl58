@@ -1,0 +1,7 @@
+=Ensures numbers on the display are rounded=
+:$$2nd Fix$$ '''d'''
+:Code: ''58'', In Help Files: ''Fix''
+The argument indicates the number of decimal digits sought. Use $$INV 2nd Fix$$ or $$2nd Fix 9$$ to cancel.
+==Example==
+*$$2nd pi 2nd fix 2$$: @@3.14@@
+*$$inv 2nd fix$$: @@3.141592654@@

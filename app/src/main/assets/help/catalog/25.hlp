@@ -1,0 +1,6 @@
+=Clears the display and any pending arithmetic operation=
+:$$CLR$$
+:Code: ''25'', In Help Files: ''CLR''
+==Example==
+*$$1 +$$: @@1@@
+*$$clr$$: @@0@@

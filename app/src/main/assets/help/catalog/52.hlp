@@ -1,0 +1,8 @@
+=Used to enter the exponent of a number=
+:$$EE$$
+:Code: ''52'', In Help Files: ''EE''
+$$EE$$ also puts the display in '''Scientific Mode'''. $$INV EE$$ cancels '''Scientific Mode'''.
+==Example==
+*$$1 ee 99 +/-$$: @@1-99@@
+*$$2nd pi$$: @@3.1415927 00@@
+*$$inv ee$$: @@3.141592654@@

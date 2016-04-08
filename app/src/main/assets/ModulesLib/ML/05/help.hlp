@@ -1,0 +1,26 @@
+=ML-05: Complex Math=
+
+Given ''x = a + bi'', this program computes its square, square root, inverse, natural logarithm, and exponential.
+
+==General Procedure==
+# Enter ''x'': ''a'' $$A$$ ''b'' $$A$$
+# Perform operation by clicking on the appropriate user key (see below)
+# The display is the real part of the result. Press $$x:t$$ to get the imaginary part
+
+This is the mapping between function and user key:
+* $$C$$: ''x^2''
+* $$D$$: ''sqrt(x)''
+* $$E$$: ''1/x''
+* $$2nd A'$$: ''ln(x)''
+* $$2nd B'$$: ''e^x''
+
+''Note:''
+* The result becomes the new value of ''x'', allowing operations to be ''chained''
+
+==Example==
+To compute ''(1+i)^2'':
+* $$1 A 1 A$$
+* $$C$$: @@1.7933547-12@@
+* $$x:t$$: @@2@@
+
+Note that, as in ML-04, the result is very close to ''2i'', but not quite, due to rounding errors in the intermediary computations.

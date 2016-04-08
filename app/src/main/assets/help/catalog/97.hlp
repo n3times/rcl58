@@ -1,0 +1,11 @@
+=Decrements and Skips if Zero=
+:$$2nd Dsz$$ '''d address'''
+:Code: ''97'', In Help Files: ''Dsz''
+#Decrements register '''0d''' by 1 and goes to a given address unless register '''0d''' is 0.
+#If register '''0d''' is 0, the branching is skipped, that is it we don't go to the given address.
+$$INV 2nd Dsz$$, also decrements register '''0d''' by 1, but goes to the given address if and only if register '''0d''' is 0.
+==Example==
+*$$2nd cp 1 sto 00 lrn$$: @@000 00@@
+*$$2nd dsz 0 073 lrn$$: @@000 00@@
+*$$2nd cp 2 sto 00 lrn$$: @@000 00@@
+*$$2nd dsz 0 073 lrn$$: @@073 00@@

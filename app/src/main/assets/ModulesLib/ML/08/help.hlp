@@ -1,0 +1,40 @@
+=ML-08: Zeros of a Function=
+
+Given a function ''f(x)'' and 2 real numbers ''a'' and ''b'' (a < b), this program attempts to find roots of ''f'' in [a, b]
+
+The user should provide ''f'', ''a'' and ''b'' and, optionally:
+* ''delta'', the length of the sampling intervals: the program will divide [a, b] in intervals of length delta and it will attempt to find a solution in each one of those intervals
+* ''epsilon'', the maximum error between the approximate root, as given by the program, and the actual root
+
+Defaults are:
+* ''delta = b - a'', that is, at most one solution will be found
+* ''epsilon = 0.01''
+
+To compute the zeros of ''f'':
+# Define ''f'' (see below)
+# ''a'' $$A$$
+# ''b'' $$B$$
+# ''delta'' $$C$$ (optionally)
+# ''epsilon'' $$D$$ (optionally)
+# $$E$$: either the approximate root or @@[ 9.9999999 99@@ (no more roots)
+# Repeat the previous step until no more roots are found
+
+''Defining f:''
+''f'' should be defined as a subroutine that starts with
+:$$2nd Lbl A' ($$ 
+and ends with
+:$$) INV SBR$$
+This subroutine should not use $$CLR$$ or $$=$$ as they will disturb the pending operations of the program, neither should it use any of the registers between 00 and 08.
+
+==Example==
+We wish to solve ''x^2 - 3x + 1 = 0'':
+* $$LRN 2nd Lbl A' (STO 09 x2 - 3 * RCL 09 + 1 ) INV SBR LRN$$
+* $$5 +/- A$$
+* $$5 B$$
+* $$1 C$$
+* $$.0000000001 D$$
+* $$E$$: @@  .3819660113 @@
+* $$E$$: @@  2.618033989 @@
+* $$E$$: @@[ 9.9999999 99@@
+
+That is, we divide [-5, 5] in intervals of length 1, ask for high precision solutions and obtain the 2 roots which are, approximately: 0.3819660113 and 2.618033989

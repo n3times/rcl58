@@ -1,0 +1,89 @@
+=ML-03: Matrices: +, x=
+
+==Addition==
+More generally, this program allows to compute the linear combination of 2 matrices.
+
+Let ''A'' and ''B'' be 2 mxn matrices and ''x'', ''y'' be 2 real numbers. We denote by a_ij the coefficients of ''A'' and by b_ij the coefficients of ''B''.
+
+Let's compute ''C = xA + yB''.
+
+Enter ''A'', ''B'', ''x'' and ''y'':
+# ''m'' $$A$$ ''n'' $$A$$
+# $$1 B$$ (This means we will start with the ''1st column'' of ''A'')
+# $$a_11 R/S a_21 R/S ... a_mn R/S$$
+# $$1 C$$ (This means we will start with the ''1st column'' of ''B'')
+# $$b_11 R/S b_21 R/S ... b_mn R/S$$
+# ''x'' $$D$$ ''y'' $$D$$
+Compute ''xA + yB'' and get result:
+# $$E$$
+# $$1 2nd A'$$ (This means that we will start with the ''1st column'' of ''C'')
+# Press $$R/S$$ ''mxn times'' to get the coefficients of ''C'' in order c11, c21, ..., cmn
+
+''Note:''
+m and n should be such that 2mn + 7 < 100. (2mn registers are for storing the 2 matrices and a few more for bookkeeping)
+
+==Addition Example==
+''A'' is the matrix with coefficients:
+:''2 1''
+:''1 2''
+and ''B'' is the matrix with coefficients:
+:''1 1''
+:''1 1''
+Let's compute ''2A - B''.
+
+Enter ''A'', ''B'', ''x'' and ''y'':
+* $$2 A 2 A$$
+* $$1 B 2 r/s 1 r/s 1 r/s 2 r/s$$
+* $$1 C 1 r/s 1 r/s 1 r/s 1 r/s$$
+* $$2 D 1 +/- D$$
+Compute ''A + B'' and get result:
+* $$E$$
+* $$1 2nd A'$$
+* $$R/S$$: @@3@@
+* $$R/S$$: @@1@@
+* $$R/S$$: @@1@@
+* $$R/S$$: @@3@@
+That is ''2A - B'' is the matrix:
+:''3 1''
+:''1 3''
+
+==Multiplication==
+Let ''A'' be an mxn matrix and ''B'' an nxp matrix. Let ''C = AB''. Note that the kth column of ''C'' only depends on ''A'' and on the kth column of ''B''.
+
+Enter ''A'':
+# ''m'' $$A$$ ''n'' $$A$$
+# $$1 B$$ (This means we will start with the ''1st column'' of ''A'')
+# $$a_11 R/S a_21 R/S ... a_mn R/S$$
+To compute the ''kth column'' of ''C = AB'':
+# $$1 2nd B'$$ (This means we will start with the ''1st row'' of the kth column of ''B'')
+# $$b_1k R/S b_2k R/S ... b_nk R/S$$
+# $$2nd C'$$
+# $$1 2nd D'$$ (This means we will start with the ''1st row'' of the kth column of ''C'')
+# Press $$R/S$$ m times to get the coefficients of the kth column of ''AB''
+
+''Note:''
+m and n should be such that mn + n + 7 < 100. (mn registers are for storing ''A'', n for the kth column of ''B''  and a few more for bookkeeping)
+
+==Multiplication Example==
+Let's compute the square of ''A'', the matrix with coefficients:
+:''2 1''
+:''1 2''
+Enter ''A'':
+* $$2 A 2 A$$
+* $$1 B 2 r/s 1 r/s 1 r/s 2 r/s$$
+First column of ''B'' (and ''AB''):
+* $$1 2nd B' 2 r/s 1 r/s$$
+* $$2nd C'$$
+* $$1 2nd D'$$
+* $$r/s$$: @@5@@
+* $$r/s$$: @@4@@
+Second column of ''B'' (and ''AB''):
+* $$1 2nd B' 1 r/s 2 r/s$$
+* $$2nd C'$$
+* $$1 2nd D'$$
+* $$r/s$$: @@4@@
+* $$r/s$$: @@5@@
+
+That is the square of ''A'' is:
+:''5 4''
+:''4 5''

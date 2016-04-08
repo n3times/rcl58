@@ -1,0 +1,8 @@
+=Clears the program and sets register '''T''' to 0=
+:$$2nd CP$$
+:Code: ''29'', In Help Files: ''CP''
+When used in a program, just clears register '''T'''.
+==Example==
+*$$1 x:t 2 lrn A lrn$$: @@2@@
+*$$2nd cp x:t$$: @@0@@
+*$$lrn$$: @@000 00@@

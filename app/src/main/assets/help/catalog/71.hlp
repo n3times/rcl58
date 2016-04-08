@@ -1,0 +1,9 @@
+=Calls the subroutine at a given address=
+:$$SBR$$ '''address'''
+:Code: ''71'', In Help Files: ''SBR''
+$$INV SBR$$ marks the end of a subroutine.
+==Example==
+*$$lrn 2nd lbl + + 1 = inv sbr lrn$$: @@0@@
+*$$sbr +$$: @@1@@
+*$$sbr +$$: @@2@@
+*$$sbr +$$: @@3@@

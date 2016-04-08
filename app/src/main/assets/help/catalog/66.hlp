@@ -1,0 +1,4 @@
+=Pauses the display for 1 second or so=
+:$$2nd Pau$$
+:Code: ''66'', In Help Files: ''Pau''
+This allows the user to see an intermediate result in '''Running Mode'''.

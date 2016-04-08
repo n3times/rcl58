@@ -1,0 +1,7 @@
+=Takes the integral part of the display=
+:$$2nd Int$$
+:Code: ''59'', In Help Files: ''Int''
+$$2nd Int$$ gets rid of anything after the decimal point. $$Inv 2nd Int$$ only keeps the fractional part that is the digits after the decimal point.
+==Example==
+*$$2nd pi 2nd int$$: @@3@@
+*$$2nd pi inv 2nd int$$: @@.1415926536@@

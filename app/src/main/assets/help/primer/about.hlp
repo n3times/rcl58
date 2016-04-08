@@ -1,0 +1,25 @@
+The ''TI-59'' and its little sister, the ''TI-58'', were two of the first programmable calculators, and among the most celebrated ones.
+
+They were introduced by Texas Instruments in 1977, the same year as the ''Apple ]['', the ''TRS-80'' and the ''Commodore PET''.
+
+Those were exciting times and people were finally able to write their own programs to solve equations, compute compound interests and (especially) play games.
+
+A ''thermal alphanumeric printer'' could be attached to the TI-58 and the TI-59, allowing for listing programs, drawing curves and generally making programs more user friendly.
+
+In addition, the TI-59 included a ''magnetic card reader'' that allowed users to save their programs and load them later or share them with other TI-59 users.
+
+==About RCL-58 and RCL-59==
+
+''RCL-58'' and ''RCL-59'' are faithful recreations of the TI-58 and the TI-59, repectively. They implement all the advanced scientific functions of the original calculators as well as the programming functionality.
+
+They also include:
+* A programming primer and description of each instruction
+* Access to the Master Library
+* View of the program in memory
+* Access to the virtual printer
+
+In addition, RCL-59 includes:
+* Saving and loading of programs
+* Exporting and importing, via email, of programs for archiving purposes, exchanging them across devices and sharing them with other users
+* Display of the current operation, as entered by the user
+* More options, such as additional printer control

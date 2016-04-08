@@ -1,0 +1,8 @@
+=Marks the end a subroutine=
+:$$INV SBR$$
+:Code: ''92'', In Help Files: ''RTN''
+==Example==
+*$$2nd cp clr lrn$$: @@000 00@@
+*$$2nd lbl A x2 B r/s 2nd lbl B 1/x inv sbr lrn$$: @@0@@
+*$$2 A$$: @@0.25@@
+*$$3 A$$: @@.1111111111@@

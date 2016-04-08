@@ -1,0 +1,55 @@
+Programming is at the heart of the TI-58 and the TI-59 and what made them so useful and still fun. 
+
+==Hello World==
+
+To ease into any programming system, it is customary to start with a '''Hello World''' program. This is a program, as simple as possible, that shows one thing or two about the system. The following is our '''Hello World''':
+
+:$$$Lbl A$$$
+:$$$+ 1 =$$$
+:$$$Pau$$$
+:$$$GTO A$$$
+
+The first line is just a label and does not do anything except to mark a place in the program. Then comes the real computation:
+:$$$+ 1 =$$$
+that is we are adding 1 to whatever number is on the display. The $$$Pause$$$ instruction makes the display pause for 1 second or so, so the user can see it. Finally, the program loops back to the beginning by '''going to''' $$$A$$$.
+
+That is, if we start with @@@0@@@, this program will display successively @@@1@@@, @@@2@@@, @@@3@@@, ..., acting like a timer or counter.
+
+==Program Editing==
+
+To enter the program, first type
+:$$2nd CP$$
+This will clear the current program so we can start afresh . Then type the following:
+
+:$$LRN$$
+:$$2nd Lbl A$$
+:$$+ 1 =$$
+:$$2nd Pau$$
+:$$GTO A$$
+:$$LRN$$
+
+The first $$LRN$$ will place the calculator in ''learning mode''. You will see on the display @@000 00@@. The first 3 digits means that we are at the beginning of the program, at step ''000'', and the ''00'' means that this first step is blank. As you type, you will see the step number being incremented 1 by 1.
+
+In case of mistake, the program can be edited with $$BST$$ and $$SST$$, to go one step backward or forward, as well as with $$2nd Del$$ and $$2nd Ins$$, to delete or insert a step.
+
+The second $$LRN$$ will place the calculator out of learning mode, back to ''normal mode''.
+
+==Running==
+
+Simply press $$CLR$$ (to clear the display) and then press $$A$$. You should see the display flash the numbers @@1@@, @@2@@, @@3@@ ...
+
+This program loops indefinitely. To stop it, press the key $$R/S$$. The program can be resumed by pressing $$R/S$$ again.
+
+==Saving==
+
+'''''Please note that this feature is only available in RCL-59'''''
+
+Any program can be saved into the library so that it can be loaded at a later time. To do this press:
+:$$2nd Wrt$$
+Alternatively you can access the same functionality by pressing the '''More''' button on the main menu.
+
+In a real TI-59, the user would slide a magnetic card. Here instead you will be prompted to specify a name for your program and, optionally, a description of how to use the program.
+
+The program can be loaded later with:
+:$$Inv 2nd Wrt$$
+Alternatively, you can load the program by going through the '''Library''', which can be accessed through the main menu.

@@ -1,0 +1,18 @@
+=ML-25: Misc. Conversions=
+
+Converts temperatures, weights and volumes from one unit to another:
+:$$A$$: Fahrenheit -> Celsius
+:$$2nd A'$$: Celsius -> Fahrenheit
+:$$B$$: fluid ounces -> liters
+:$$2nd B'$$: liters -> fluid ounces
+:$$C$$: U.S. gallons -> liters
+:$$2nd C'$$: liters -> U.S. gallons
+:$$D$$: ounces -> grams
+:$$2nd D'$$: grams -> ounces
+:$$E$$: pounds -> kilograms
+:$$2nd E'$$: kilograms -> pounds
+
+==Example==
+:$$0 2nd A'$$: @@32@@
+:$$100 2nd A'$$: @@212@@
+That is, water freezes at 32 degrees Fahrenheit and evaporates at 212 degrees Fahrenheit.

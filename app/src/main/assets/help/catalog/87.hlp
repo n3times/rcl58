@@ -1,0 +1,7 @@
+=Goes to given address, if flag is set=
+:$$2nd iff$$ '''d address'''
+:Code: ''87'', In Help Files: ''iff''
+$$INV 2nd iff$$ goes to given address, if flag is unset.
+==Example==
+*$$2nd cp lrn$$: @@000 00@@
+*$$2nd stf 3 2nd iff 3 073 lrn$$: @@073 00@@

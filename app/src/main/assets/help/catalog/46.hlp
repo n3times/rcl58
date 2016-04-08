@@ -1,0 +1,4 @@
+=Inserts a blank step at the current position=
+:$$2nd Ins$$
+:Code: ''46'', In Help Files: ''Ins''
+Only in '''LRN Mode'''. The user can then overwrite that blank step with any instruction.

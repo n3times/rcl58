@@ -1,0 +1,18 @@
+=ML-14: Normal Distribution=
+
+Consider the normal distribution of mean 0 and standard deviation 1. 
+
+By ''Z(x)'', we denote the density of this distribution at x.
+
+By ''Q(x)'', we denote the probability that a sample is > x.
+
+==Z(x) and Q(x)==
+* x $$A$$ gives Z(x)
+* $$B$$ gives Q(X)
+
+==Example==
+Let's compute the odds that a sample is between -3 and 3. The odds that a sample is greater than 3 is Q(3). The odds that a sample is less than -3 is also Q(3) by symmetry of Z(x): That is we want to compute:
+:1 - 2*Q(3)
+* 3 $$A B$$: 
+* $$+/- * 2 + 1 =$$: @@.9973000656@@
+That is approximately 99.73%

@@ -1,0 +1,7 @@
+=Puts the display in Engineering Mode=
+:$$2nd Eng$$
+:Code: ''57'', In Help Files: ''Eng''
+In Engineering mode the 10-base exponent of number is a multiple of 3. Use $$INV 2nd Eng$$ to cancel.
+==Example==
+*$$10000 2nd eng$$: @@10. 03@@
+*$$inv 2nd eng$$: @@10000@@

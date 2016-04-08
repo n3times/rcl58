@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:background="@color/black"
+    tools:context="${relativePackage}.${activityClass}" >
+    <com.n3times.android.rcl58.views.NavigationBar
+        android:id="@+id/mainNavigationBar1"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        custom:bg_height_dp="20"
+        custom:bg_color="@color/onyx"
+        custom:enabled="true"
+        custom:left="arrow"
+        custom:right="arrow"
+        custom:title="menu" />
+
+    <com.n3times.android.rcl58.views.CalculatorMenu
+        android:id="@+id/mainToolbar1"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true" />
+    
+    <LinearLayout
+        android:orientation="vertical" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        > 
+        
+    <com.n3times.android.rcl58.views.Display
+        android:id="@+id/listView1"
+        android:visibility="visible"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <com.n3times.android.rcl58.views.Keyboard
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:layout_weight="6.5"
+        android:src="@drawable/calc_58_640x913" />
+	</LinearLayout>
+</RelativeLayout>

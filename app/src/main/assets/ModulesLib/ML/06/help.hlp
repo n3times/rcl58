@@ -1,0 +1,34 @@
+=ML-06: Complex Trigonometry=
+
+Given ''x = a + bi'', this program computes sin(x), cos(x), tan(x) as well as arcsin(x), arccos(x), arctan(x).
+
+==General Procedure==
+# Enter ''x'': ''a'' $$A$$ ''b'' $$A$$
+# Perform operation by clicking on the appropriate user key (see below)
+# The display is the real part of the result. Press $$x:t$$ to get the imaginary part
+
+This is the mapping between function and user key:
+* $$B$$: sin
+* $$C$$: cos
+* $$D$$: tan
+* $$2nd B'$$: arcsin
+* $$2nd C'$$: arccos
+* $$2nd D'$$: arctan
+
+''Notes:''
+* ''x'' is interpreted as being in ''radians'', no matter the trigonometric mode
+* The result becomes the new value of ''x'', allowing operations to be ''chained''
+
+==Examples==
+To compute ''sin(1+i)'':
+* $$1 A 1 A$$
+* $$B$$: @@1.298457581@@
+* $$x:t$$: @@.6349634148@@
+
+That is ''sin(1+i) = 1.298457581 + .6349634148i'' (approximately)
+
+To compute ''cos(sin(2i))'':
+* $$0 A 2 A$$
+* $$B C$$: @@18.8105995@@
+* $$x:t$$: @@0@@
+That is ''cos(sin(2i)) = 18.8105995'' (approximately)

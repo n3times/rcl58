@@ -1,0 +1,14 @@
+=Manipulates directly the 8 hierarchical registers=
+:$$N/A (synthesized)$$
+:Code: ''82'', In Help Files: ''HIR''
+These registers are used for arithmetic operations. Note that this instruction needs to be synthesized, as shown in our example where $$2nd Lbl A hir 11 r/s$$ is indirectly entered.
+:  $$HIR$$ '''0x''':           $$$STO$$$ (x between 1 and 8)
+:  $$HIR$$ '''1x''':           $$$RCL$$$
+:  $$HIR$$ '''2x''':           No op (The behavior is unknown in the actual calculator)
+:  $$HIR$$ '''3x''':           $$$SUM$$$
+:  $$HIR$$ '''4x''':           $$$Prd$$$
+:  $$HIR$$ '''5x''':           $$$INV SUM$$$
+:  $$HIR$$ '''6x''':           $$$INV Prd$$$ (same for $$HIR$$ '''7x''', $$HIR$$ '''8x''' and $$HIR$$ '''9x''')
+==Example==
+*$$2nd cp clr lrn 2nd lbl a sto 82 bst bst 2nd del sst A r/s lrn$$: @@0@@
+*$$2 + 3 * 5 A$$: @@2@@

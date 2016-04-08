@@ -1,0 +1,23 @@
+=ML-15: Random Number Generator=
+
+==Seed==
+To initialize the random number generator, enter a number between 0 and 199017 and press $$E$$.
+
+==Range [0, 1]==
+$$SBR 2nd DMS$$
+
+==Uniform distribution in [A, B]==
+* A $$A$$
+* B $$B$$
+* $$C$$
+
+==Normal Distribution==
+* Desired mean $$A$$
+* Desired standard deviation $$B$$
+* $$2nd C'$$
+
+==Statistics==
+* $$2nd E'$$
+* Generate random numbers as above
+* $$2nd avg$$: gives the mean
+* $$inv 2nd avg$$ gives the standard deviation

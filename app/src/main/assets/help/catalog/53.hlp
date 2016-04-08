@@ -1,0 +1,5 @@
+=Marks the beginning of an arithmetic subexpression=
+:$$($$
+:Code: ''53'', In Help Files: ''(''
+==Example==
+*$$( 1 + 2 ) * 3 =$$: @@9@@

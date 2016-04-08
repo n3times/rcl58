@@ -1,0 +1,8 @@
+=Exchanges the values of register '''X''' (the display) and of the auxiliary register '''T'''=
+:$$2nd x:t$$
+:Code: ''32'', In Help Files: ''x:t''
+==Example==
+*$$1 x:t 2 x:t$$: @@1@@
+*$$x:t$$: @@2@@
+*$$x:t$$: @@1@@
+*$$x:t$$: @@2@@

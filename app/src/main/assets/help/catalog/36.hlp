@@ -1,0 +1,7 @@
+=Selects a program from the current module=
+:$$2nd Pgm$$ '''dd'''
+:Code: ''36'', In Help Files: ''Pgm''
+In '''Running Mode''', a user program can call a module's subroutine with:
+$$2nd Pgm$$ '''dd''' $$Sbr$$ '''address'''. $$INV 2nd Pgm$$ or $$2nd Pgm 00$$ deselects any module program.
+==Example==
+*$$2nd Pgm 01 sbr =$$: @@1@@

@@ -1,0 +1,6 @@
+=Advances the printer paper=
+:$$2nd Adv$$
+:Code: ''98'', In Help Files: ''Adv''
+The paper will advance until the $$2nd Adv$$ key is released.
+==Example==
+*$$2nd adv$$: &&                    &&

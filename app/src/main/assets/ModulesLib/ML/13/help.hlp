@@ -1,0 +1,41 @@
+=ML-13: Curve Solution=
+
+Consider a circle of center '''O''' and radius '''r''', and an arc of the circle, that is the curve that goes from a point '''P_1''' to a point '''P_2''' in the circle.
+
+Given:
+* The radius '''r''' of the circle
+* The angle '''Theta''' at '''0''' between the segments '''[0, P_1]''' and '''[0, P_2]'''
+it is possible to determine (uniquely):
+* The length '''s''' of the arc
+* The length '''c''' of the chord, that's it the length of the segment '''[P_1, P_2]'''
+
+Actually given ''any'' 2 of these 4 parameters, it is possible to determine the other 2.
+
+This program does that and, in addition, computes:
+* The sector area '''A''', defined as the area situated between the arc and the segments '''[O, P_1]''' and '''[O, P_2]'''
+* The segment area '''a''', defined as the area situated between the chord and the arc.
+==Procedure==
+Enter 2 of the following parameters:
+* '''Theta''' $$A$$ ('''Theta''' must be expressed in radians)
+* '''r''' $$B$$
+* '''s''' $$C$$
+* '''c''' $$D$$
+
+After doing this all the parameters can be computed, in this exact sequence:
+* $$2nd A'$$ gives '''Theta''' (in radians)
+* $$2nd B'$$ gives '''r'''
+* $$2nd C'$$ gives '''s'''
+* $$2nd D'$$ gives '''c'''
+
+''Note:'' Parameters entered in the first step can be omitted
+
+In addition:
+* $$E$$ gives '''A'''
+* $$2nd E'$$ gives '''a'''
+
+==Example==
+Say that the radius is 1 and the angle in pi/2:
+* $$2nd pi / 2 = A$$
+* $$1 B$$
+* $$2nd C'$$: @@1.570796327@@ 
+* $$2nd D'$$: @@1.414213562@@

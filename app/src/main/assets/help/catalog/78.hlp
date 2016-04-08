@@ -1,0 +1,10 @@
+=Adds a new data point for use by the Statistics functions=
+:$$2nd S+$$
+:Code: ''78'', In Help Files: ''S+''
+Both register '''X''' and register '''T''' are added, as a data point. $$INV 2nd S+$$ is used to remove data point.
+Before entering the data points, the user should reset to 0 the registers used by the Statistics functions as follows: $$2nd Pgm 01 sbr clr$$.
+==Example==
+*$$2nd Pgm 01 sbr clr 10 2nd S+$$: @@1@@
+*$$20 2nd S+$$: @@2@@
+*$$2nd avg$$: @@15@@
+*$$inv 2nd avg$$: @@7.071067812@@

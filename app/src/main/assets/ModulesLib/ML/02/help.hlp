@@ -1,0 +1,62 @@
+=ML-02: Matrices: |A|, Ax=b, inverse=
+
+Let ''A'' be an nxn matrix and ''b'' a vector with n coefficients.
+
+We denote by a_ij the coefficients of ''A'' and by b_i the coefficients of ''b''.
+
+==Determinant==
+To compute ''|A|'' (order n <= 9):
+# ''n'' $$A$$
+# $$1 B$$ (This means we will start with the 1st column of ''A'')
+# $$a_11 R/S a_21 R/S ... a_nn R/S$$
+# $$C$$
+
+==Determinant Example==
+''A'' is the matrix with coefficients:
+:''2 1''
+:''1 2''
+* $$2 A$$ 
+* $$1 B 2 r/s 1 r/s 1 r/s 2 r/s$$
+* $$C$$: @@3@@
+That is the determinant of ''A'' is 3.
+
+==Solving Ax=b==
+To solve ''Ax=b'' (order n <= 8):
+# If not already done, enter matrix ''A'' as before
+# $$C$$ (to compute the determinant as an intermediary operation)
+# $$1 D$$ (This means we will start with b_1)
+# $$b_1 R/S b_2 R/S ... b_n R/S$$
+# $$E$$
+To display the result, that is the solution ''x'':
+# $$1 2nd A'$$ (This means we will start with x_1)
+# Press $$R/S$$ ''n times'' to get the coefficients of ''b''
+
+== Solving Ax=b Example==
+Assuming that we have already computed the determinant of ''A'', as in the previous example, let's solve the equation for ''b = (4, 5)''
+* $$1 D 4 r/s 5 r/s$$
+* $$E$$
+* $$1 2nd A'$$
+* $$r/s$$: @@1@@
+* $$r/s$$: @@2@@
+That is the solution is ''x = (1, 2)''
+
+==Inverse==
+To compute $$$A'$$$ the inverse of ''A'' (order n <= 9):
+# If not already done, enter matrix ''A'' as before
+# $$C$$ (to compute the determinant as an intermediary operation)
+# $$2nd B'$$
+To display the result:
+# $$1 2nd C'$$ (This means that we will start with the 1st column of $$$A'$$$)
+# Press $$R/S$$ ''nxn times'' to get the coefficients of $$$A'$$$
+
+==Inverse Example==
+Assuming that we have already computed the determinant of ''A'', as in the first example, let's find the inverse of ''A'':
+* $$2nd B'$$
+* $$1 2nd C'$$
+* $$r/s$$: @@ .6666666667@@
+* $$r/s$$: @@-.3333333333@@
+* $$r/s$$: @@-.3333333333@@
+* $$r/s$$: @@ .6666666667@@
+That is $$$A'$$$ is the matrix with coefficients:
+:''2/3 -1/3''
+:''-1/3 2/3''

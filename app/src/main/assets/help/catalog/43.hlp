@@ -1,0 +1,6 @@
+=Recalls the value of a given register into the display=
+:$$RCL$$ '''dd'''
+:Code: ''43'', In Help Files: ''RCL''
+==Example==
+*$$2 sto 00 clr$$: @@0@@
+*$$rcl 00$$: @@2@@

@@ -1,0 +1,8 @@
+=Puts trigonometric mode in degrees=
+:$$2nd Deg$$
+:Code: ''60'', In Help Files: ''Deg''
+This is the default, when the calculator is first turned on.
+==Example==
+*$$2nd deg 1 inv 2nd sin$$: @@90@@
+*$$2nd grd 1 inv 2nd sin$$: @@100@@
+*$$2nd rad 1 inv 2nd sin$$: @@1.570796327@@

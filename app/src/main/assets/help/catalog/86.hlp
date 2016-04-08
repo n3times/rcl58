@@ -1,0 +1,7 @@
+=Sets a given flag=
+:$$2nd stf$$ '''d'''
+:Code: ''86'', In Help Files: ''stf''
+$$INV 2nd stf$$ unsets the given flag.
+==Example==
+*$$2nd cp lrn$$: @@000 00@@
+*$$2nd stf 3 2nd iff 3 073 lrn$$: @@073 00@@

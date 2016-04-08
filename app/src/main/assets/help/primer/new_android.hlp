@@ -1,0 +1,9 @@
+==Version 1.0.1==
+
+Fixed glitch where the application would immediately terminate the ''second time'' it was opened, ''if'' originally opened through the installer. (It would run fine thereafter)
+
+Minor tweaks to the UI and to the Help section.
+
+==Version 1.0==
+
+Initial Release

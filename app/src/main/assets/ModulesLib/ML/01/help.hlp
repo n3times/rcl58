@@ -1,0 +1,32 @@
+=ML-01 Diagnostic=
+
+==Diagnostic==
+$$sbr =$$: runs some tests to make sure the calculator is OK (this can take a few seconds). Displays @@1@@, which identifies the Master Library, and also prints:
+:&&                    &&
+:&&          1.        &&
+:&&              MASTER&&
+:&&                    &&
+If there is an error the display will blink.
+$$sbr 2nd wrt$$: identifies the Master Library right away, without running the tests.
+
+==Linear Regression Init==
+$$sbr clr$$: initializes to 0 the registers used by the statistics functions (such as $$$S+$$$).
+
+==Print Routine==
+Some programs, such as ML-20, don't print their results. In this case you can:
+:Select $$2nd Pgm 01$$
+:Enter $$xx STO 00$$, where $$$xx$$$ is the number of the program
+:And press the user keys as specified by Program xx.
+For example:
+
+:$$2nd Pgm 01$$
+:$$20 STO 00$$
+:$$101.2014 D$$
+
+will print:
+:&&                    &&
+:&&    101.2014        &&
+:&&          4.        &&
+:&&                    &&
+
+That is, we are running indirectly '''ML-20: Day of the Week''' and printing the input and output. By the way, &&&4&&& means that the first day of 2014 is a Wednesday.

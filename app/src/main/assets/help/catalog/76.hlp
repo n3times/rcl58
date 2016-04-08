@@ -1,0 +1,8 @@
+=Marks a location in a program=
+:$$2nd Lbl$$ '''label'''
+:Code: ''76'', In Help Files: ''Lbl''
+Flow instructions can subsequently refer to that location.
+==Example==
+*$$2nd cp lrn 2nd lbl A lrn rst lrn$$: @@000 00@@
+*$$rst lrn$$: @@000 00@@
+*$$gto A$$: @@002 00@@

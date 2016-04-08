@@ -1,0 +1,4 @@
+=Prompts the user to save the current program=
+:$$2nd Wrt$$
+:Code: ''96'', In Help Files: ''Wrt''
+$$INV 2nd Wrt$$ prompts the user to load a program into memory.

@@ -1,0 +1,8 @@
+=Resumes/Starts program execution=
+:$$R/S$$
+:Code: ''91'', In Help Files: ''R/S''
+In '''Running Mode''', it only stops execution. 
+==Example==
+*$$2nd cp lrn rst lrn rst clr$$: @@0@@
+*$$r/s$$: @@[@@
+*$$r/s$$: @@0@@

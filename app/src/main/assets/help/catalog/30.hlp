@@ -1,0 +1,6 @@
+=Tangent and its inverse=
+:$$2nd tan$$
+:Code: ''30'', In Help Files: ''tan''
+==Example==
+*$$2nd deg 45 2nd tan$$: @@1@@
+*$$inv 2nd tan$$: @@45@@

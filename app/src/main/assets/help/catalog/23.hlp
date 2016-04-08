@@ -1,0 +1,6 @@
+=Natural logarithm and its inverse=
+:$$lnx$$
+:Code: ''23'', In Help Files: ''lnx''
+==Example==
+*$$1 lnx$$: @@0@@
+*$$1 inv lnx$$: @@2.718281828@@

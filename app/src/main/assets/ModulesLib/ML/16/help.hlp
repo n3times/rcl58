@@ -1,0 +1,23 @@
+=ML-16: Combinations, Permutations and Factorials=
+
+==Factorial==
+
+* Enter natural number, press $$A$$
+* Press $$C$$ for its factorial
+
+==Permutations==
+
+* Enter n, press $$A$$
+* Enter r, press $$B$$
+* To get the number of permutations of n items taken r at a time: press $$D$$
+
+==Combinations==
+* Enter n, press $$A$$
+* Enter r, press $$B$$
+* To get the number of combinations of n items taken r at a time: press $$E$$
+
+==Examples==
+Number of ways 5 different items can be sorted:
+:$$5 A C$$: @@120@@
+Number of ways to choose 3 items in a collection of 5 (without considering ordering):
+:$$5 A 3 B E$$: @@10@@

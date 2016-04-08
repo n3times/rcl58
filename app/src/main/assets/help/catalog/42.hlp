@@ -1,0 +1,6 @@
+=Stores display value into given register=
+:$$STO$$ '''dd'''
+:Code: ''42'', In Help Files: ''STO''
+==Example==
+*$$2 sto 00 clr$$: @@0@@
+*$$rcl 00$$: @@2@@

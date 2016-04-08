@@ -1,0 +1,6 @@
+=Puts the calculator in and out of LRN Mode=
+:$$LRN$$
+:Code: ''31'', In Help Files: ''LRN''
+==Example==
+*$$clr 2nd cp lrn$$: @@000 00@@
+*$$lrn$$: @@0@@

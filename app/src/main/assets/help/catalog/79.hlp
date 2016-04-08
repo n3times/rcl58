@@ -1,0 +1,9 @@
+=Computes the average of n data points=
+:$$2nd avg$$
+:Code: ''79'', In Help Files: ''avg''
+The data points are those previously entered using $$2nd S+$$. $$2nd avg$$ displays the average of the numbers in register '''X'''. Pressing then $$x:t$$ gives the average of the numbers that were in register '''T'''. $$INV 2nd avg$$ computes the standard deviation.
+==Example==
+*$$2nd Pgm 01 sbr clr 10 2nd S+$$: @@1@@
+*$$20 2nd S+$$: @@2@@
+*$$2nd avg$$: @@15@@
+*$$inv 2nd avg$$: @@7.071067812@@

@@ -1,0 +1,7 @@
+=Puts trigonometric mode in radians=
+:$$2nd rad$$
+:Code: ''70'', In Help Files: ''rad''
+==Example==
+*$$2nd deg 1 inv 2nd sin$$: @@90@@
+*$$2nd grd 1 inv 2nd sin$$: @@100@@
+*$$2nd rad 1 inv 2nd sin$$: @@1.570796327@@

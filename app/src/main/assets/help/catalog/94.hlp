@@ -1,0 +1,7 @@
+=Changes the sign of a number or of its exponent=
+:$$+/-$$
+:Code: ''94'', In Help Files: ''+/-''
+==Example==
+*$$2 +/-$$: @@-2@@
+*$$+/-$$: @@2@@
+*$$EE 2 +/-$$: @@2-02@@

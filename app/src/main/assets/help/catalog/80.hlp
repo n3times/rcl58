@@ -1,0 +1,8 @@
+=Puts trigonometric mode in grads=
+:$$2nd Grd$$
+:Code: ''80'', In Help Files: ''Grd''
+A grad can be defined by 400 grads = 360 degrees.
+==Example==
+*$$2nd deg 1 inv 2nd sin$$: @@90@@
+*$$2nd grd 1 inv 2nd sin$$: @@100@@
+*$$2nd rad 1 inv 2nd sin$$: @@1.570796327@@

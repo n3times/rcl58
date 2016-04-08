@@ -1,0 +1,30 @@
+=ML-23: DMS Operations=
+
+Numbers should be entered as hh.mmss (hours, minutes and seconds)
+
+==Addition==
+To compute t_1 + t_2:
+* t_1 $$A$$
+* t_2 $$B$$
+The result, t_1 + t_2, is displayed in hh.mmss format. Note that b can be negative, allowing for substraction.
+
+==Multiplication by a scalar==
+To compute t * a, where a is a scalar:
+* t $$A$$
+* a $$C$$
+The result, t * a, ia displayed in hh.mmss format.
+
+==Division by a scalar==
+To compute t / a, where a is a scalar:
+* t $$A$$
+* a $$D$$
+The result, t / a, ia displayed in hh.mmss format.
+
+==Example==
+If, in a week, one works-out 3 times, for 50, 45 and 30 minutes, the total would be:
+* 0.50 $$A$$
+* 0.45 $$B$$ @@1.3500@@
+* $$A$$
+* 0.30 $$B$$: @@2.0500@@
+
+That is, 2 hours and 5 minutes.

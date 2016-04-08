@@ -1,0 +1,4 @@
+=No operation=
+:$$2nd Nop$$
+:Code: ''68'', In Help Files: ''Nop''
+Used in '''Edit Mode''' to remove/override an instruction without affecting the location of the other instructions.

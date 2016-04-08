@@ -1,0 +1,19 @@
+=ML-21 Hi-Lo Game=
+
+The goal of this game is to guess a number between 0 and 1023.
+
+==You guess==
+
+# Introduce a random number between 0 and 1, such as 0.1234
+# Press $$A$$
+# Press $$B$$ to generate the mystery number
+# Introduce your guess: 0 to 1023
+# Press $$C$$: @@[ 0@@ means that your guess is correct, @@-1@@ that it is too small and @@1@@ that it is too big
+# Press  $$D$$ to display the number of guesses
+
+==Calculator guesses==
+
+# Think of a number between 0 and 1023
+# Press $$2nd A'$$ to get calculator's first guess
+# Depending on the guess, press: $$2nd B'$$ if guess is too small and $$2nd C'$$ if it is too big
+# If calculator's guess is correct, press $$2nd D'$$ and the number of guesses will be displayed

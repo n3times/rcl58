@@ -1,0 +1,17 @@
+=ML-07 Polynomial Evaluation=
+
+Consider a polynomial:
+:''P(x) = a0 + a1.x + ... + an.x^n''
+
+To evaluate ''P(x)'':
+# ''n'' $$A$$
+# $$0 B$$ (This means that we will start with a0)
+# $$a0 R/S a1 R/S ... an R/S$$
+# $$C$$
+
+==Example==
+
+Compute ''P(x) = 3 - 2x + x^4'' at ''x = 2'':
+* $$4 A$$
+* $$0 B 3 R/S 2 +/- R/S 0 R/S 0 R/S 1 R/S$$
+* $$C$$: @@15@@

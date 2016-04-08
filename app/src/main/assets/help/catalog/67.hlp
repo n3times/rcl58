@@ -1,0 +1,8 @@
+=Forks to a given address if and only if register '''X''' is equal to register '''T'''=
+:$$2nd x=t$$ '''address'''
+:Code: ''67'', In Help Files: ''x=t''
+$$INV 2nd x=t$$ forks to a given address if and only if register '''X''' is different from register '''T'''.
+==Example==
+*$$2nd cp 1 x:t lrn$$: @@000 00@@
+*$$2 2nd x=t 073 lrn$$: @@000 00@@
+*$$1 2nd x=t 073 lrn$$: @@073 00@@

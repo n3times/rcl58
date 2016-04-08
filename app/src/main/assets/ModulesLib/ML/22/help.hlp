@@ -1,0 +1,23 @@
+=ML-22: Checkings/Savings Account Management=
+
+==Checkings==
+
+* Select checkings mode: $$2nd A'$$
+* Enter current balance and press $$E$$
+* For deposits, enter amount and press $$B$$
+* For withdrawals, enter amount and press $$C$$
+* To get new balance, press $$A$$
+
+==Savings==
+
+* Select savings mode: $$2nd B'$$
+Otherwise the procedure is identical to the Checkings case:
+* Enter current balance and press $$E$$
+* For deposits, enter amount and press $$B$$
+* For withdrawals, enter amount and press $$C$$
+* To get new balance, press $$A$$
+But there is an additional case, besides deposits and withdrawals, which is adding interest:
+* Enter annual interest rate and press $$2nd C'$$
+* Enter number of compounding periods pers year and press $$2nd D'$$
+* Enter the number of periods and press $$D$$
+Adding interest should be done before/after each deposit and withdrawal.

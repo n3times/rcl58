@@ -1,0 +1,89 @@
+The TI-58 and the TI-59 are programmable calculators and, as such, can be programmed for Math, Games, or any other computational task. But first, they are full-fledged Scientific Calculators.
+
+==Arithmetic (AOS)==
+
+Arithmetic expressions are entered the way they are written. For example:
+
+:$$1 + 2 * 3 =$$  @@7@@
+
+That is, the calculator knows about operator precedence, and evaluates multiplication before addition. Of course, it is possible to change the precedence by using parentheses:
+
+:$$( 1 + 2 ) * 3 =$$ @@9@@
+
+This entry system, now common, is the '''Algebraic Operator System''' (AOS) as introduced by Texas Instruments in the 70s.
+
+==Numbers and Display==
+Numbers can be represented in several ways:
+*$$EE$$ allows to enter large and small numbers. For example 100 billion is entered as $$100 EE 09$$, which leads to @@1. 11@@ on the display, that is '''1 followed by 11 zeros'''. $$EE$$ places the calculator in '''Scientific mode''' with all the numbers displayed, thereafter, that way. For example 10 is displayed as @@1. 01@@
+*$$2nd Fix$$ '''d''' makes sure that only d digits are displayed after the decimal point: $$2nd pi 2nd fix 2$$ gives @@3.14@@
+*$$2nd Eng$$ displays numbers in '''Engineering mode'''. This is similar to scientific mode, but it ensures that exponents are multiples of 3: $$10000 2nd Eng$$ gives @@10. 03@@ 
+To go back to the regular mode, press, respectively:
+* $$INV EE$$ or $$CLR$$
+* $$INV 2nd Fix$$
+* $$INV 2nd Eng$$
+
+==Registers==
+
+There are up to 100 common registers (00 to 99) to store partial and final computations.
+
+The number in the display can be stored into register dd with:
+
+:$$STO$$ '''dd'''
+
+and it can be recalled from that register with:
+
+:$$RCL$$ '''dd'''
+
+Other functions act as well on these registers. Though they are not strictly necessary, they provide added convenience. For example, $$SUM$$ '''dd''' directly adds to register dd the number on the display.
+
+See '''Function Catalog''' for these functions as well as $$2nd Prd$$, $$2nd Exc$$ and $$2nd CMs$$.
+
+==Mathematical Functions==
+
+The TI-58 and the TI-59 implement common mathematical functions, such as trigonometric functions, logarithms, exponentials. Note that to access some of these functions it is necessary to use the $$2nd$$ and/or $$INV$$ keys. For example, the natural logarithm ln(x) is obtained with the key:
+
+:$$lnx$$
+
+while e^x is obtained with:
+
+:$$INV lnx$$
+
+Similarly, the decimal logarithm is obtained with:
+
+:$$2nd log$$
+
+and 10^x with:
+
+:$$INV 2nd log$$
+
+Other Math functions include:
+* $$2nd sin$$, $$2nd cos$$ and $$2nd tan$$: The trigonometric functions
+* $$2nd Int$$: Integer Part
+* $$INV 2nd Int$$: Fractional Part 
+* $$2nd P/R$$: Polar -> Rectangular: 
+* $$INV 2nd P/R$$: Rectangular -> Polar
+
+See '''Function Catalog''' for these and other Math functions.
+
+==Statistics==
+
+Before using the Statistics functions, press $$2nd Pgm 01 SBR CLR$$. This will reset the internal registers used by these functions.
+
+Numbers are entered, 1 by 1, with $$2nd S+$$. For example if we want to compute the average of 5, 7 and 12:
+: $$5 2nd S+$$: @@1@@
+: $$7 2nd S+$$: @@2@@
+: $$12 2nd S+$$: @@3@@
+
+Note that the display tells us how many numbers have been entered until now. To compute the average:
+: $$2nd avg$$: @@8@@
+And to compute the sample standard deviation:
+: $$INV 2nd avg$$: @@3.605551275@@
+
+See $$2nd Op$$ in the '''Function Catalog''' for additional Statistics functions.
+
+==More Math==
+
+The TI-58 and the TI-59 are programmable and thus can be extended by the user to run any arbitrary program. Refer to the sections about Programming to see how to write your own programs.
+
+Some programs are standard and come with the Master Library. They include Solving Equations, Integration, working with Matrices, Arithmetic on Complex Numbers, Factorials etc.
+

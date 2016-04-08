@@ -1,0 +1,24 @@
+It is an unwritten tradition, with a new TI-58 or TI-59, to play first the '''Hi-Lo Game''' from the Master Library.
+
+In this game, the calculator generates a secret number, at random, between 1 and 1023. Your objective is to guess that number, in the least amount of trials.
+
+After each one of your guesses, the calculator will tell you whether your guess is too low, too high, or whether it is correct.
+
+==Selecting Hi-Lo==
+
+To play the '''Hi-Lo Game''', press
+:$$2nd Pgm 21$$
+Note that you can alternatively go to the '''Library''', select the '''Master Library''' module and then select '''21: Hi-Lo Game'''.
+
+==Playing Hi-Lo==
+
+# Enter a random 5-digit number (such as 12345). This is the seed that will be used by the program to generate, at random, the secret number
+# Press $$A$$
+# Press $$B$$. This will generate the secret number
+# Enter your guess and press $$C$$
+# If you get a blinking @@[ 0@@, your guess is right. If the display is @@-1@@ your guess is too low and if the display is @@1@@ your guess is too high
+# Repeat step 4, until you find the secret number
+# Press $$D$$ to see how many guesses it took you
+# If you want to play another game of '''Hi-Lo''', go to step 2
+
+How did you do? Were you able to find the secret number in less than 10 trials?

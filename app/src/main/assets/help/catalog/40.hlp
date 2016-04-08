@@ -1,0 +1,8 @@
+=Indirect Modifier=
+:$$2nd Ind$$ '''dd'''
+:Code: ''40'', In Help Files: ''Ind''
+This modifier can be used after any instruction that takes as parameter an integer, such as $$SBR$$ '''ddd'''. The modifier $$2nd Ind$$ is followed by 2 digits '''dd'''. The implied parameter of the modified instruction is the value of register '''dd''', that is the parameter is given indirectly, through a register.
+For example if register 00 has value 123, $$GTO 2nd ind 00$$ is equivalent to $$GTO 123$$.
+==Example==
+*$$23 STO 00 99 STO 2nd ind 00 RCL 00$$: @@23@@
+*$$RCL 23$$: @@99@@

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                tools:context="${relativePackage}.${activityClass}">
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="44dp">
+    </ListView>
+
+    <com.n3times.android.rcl58.views.NavigationBar
+        android:id="@+id/navigationBar1"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        custom:bg_height_dp="44"
+        custom:enabled="false"
+        custom:left="arrow"
+        custom:title="Printer" />
+    
+	<com.n3times.android.rcl58.views.ActionBar
+        android:id="@+id/actionBar1"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        custom:color="@color/onyx"
+        custom:disabled="false"
+        custom:caption="CLEAR" />
+</RelativeLayout>

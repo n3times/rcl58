@@ -1,0 +1,7 @@
+=Clears memories=
+:$$2nd CMS$$
+:Code: ''47'', In Help Files: ''CMS''
+All the common registers (00 thru 99) are reset to 0.
+==Example==
+*$$2 sto 00 rcl 00$$: @@2@@
+*$$2nd cms rcl 00$$: @@0@@

@@ -1,0 +1,31 @@
+=ML-11: Triangle Solution (1)=
+
+This program, as well as ML-12, deals with the fact that, in a triangle, knowing 3 of the 6 variables among the 3 sides and the 3 angles generally allows to deduce the 3 other ones.
+
+The only case when this is not true, is if we just know the value of the angles.
+
+Given a triangle, we denote by a, b, c the lengths of its 3 sides, and by A, B, C its 3 angles, with A being opposite to a, B to b and C to c.
+
+==Knowing a, b and c==
+* Enter: a $$A$$, b $$B$$, c $$C$$
+* $$2nd A'$$ gives A
+* $$2nd B'$$ gives B
+* $$2nd C'$$ gives C
+
+==Knowing a, b and A==
+* Enter: a $$A$$, b $$B$$, A $$C$$
+* $$D$$ gives c
+* $$2nd B'$$ gives B
+* $$2nd C'$$ gives C
+
+==Knowing a, b and C==
+* Enter: a $$A$$, b $$B$$, C $$C$$
+* $$E$$ gives c
+* $$2nd B'$$ gives B
+* $$2nd A'$$ gives A
+
+==Example==
+* 3 $$A$$, 4 $$B$$, 5 $$C$$
+* $$2nd A'$$: @@36.86989765@@
+* $$2nd B'$$: @@53.13010235@@
+* $$2nd C'$$: @@90@@

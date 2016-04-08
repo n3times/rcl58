@@ -1,0 +1,13 @@
+This program simplifies fractions.
+
+Enter the fraction '''a/b''':
+* '''a''' $$A$$
+* '''b''' $$B$$
+Get the simplified fraction '''a'/b' ''':
+* $$2nd A'$$: '''a' '''
+* $$2nd B'$$: '''b' '''
+==Example==
+* 75 $$A$$
+* 100 $$B$$
+* $$2nd A'$$: @@3@@
+* $$2nd B'$$: @@4@@

@@ -1,0 +1,8 @@
+=Exchanges the values of the display and of a given register=
+:$$2nd Exc$$ '''dd'''
+:Code: ''48'', In Help Files: ''Exc''
+==Example==
+*$$1 2nd exc 00 2 2nd exc 00$$: @@1@@
+*$$2nd exc 00$$: @@2@@
+*$$2nd exc 00$$: @@1@@
+*$$2nd exc 00$$: @@2@@

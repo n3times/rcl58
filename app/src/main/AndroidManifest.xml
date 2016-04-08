@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.n3times.android.rcl58"
+    android:versionCode="2017102902"
+    android:versionName="1.0.2" >
+
+    <application
+        android:name=".Rcl58App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.Calculator"
+            android:label="@string/title_activity_calculator"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Listing"
+            android:label="@string/title_activity_listing"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.Printer"
+            android:label="@string/title_activity_printer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.HelpHome"
+            android:label="@string/title_activity_help_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.HelpTopic"
+            android:label="@string/title_activity_help_topic"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.LibHome"
+            android:label="@string/title_activity_lib_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SettingsHome"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.HelpFunctionCatalog"
+            android:label="@string/title_activity_help_function_catalog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.LibVolume"
+            android:label="@string/title_activity_lib_volume"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.LibProgram"
+            android:label="@string/title_activity_lib_program"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SettingsTopic"
+            android:label="@string/title_activity_settings_topic"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+=Shortcut for SBR A - SBR 2nd E'=
+:$$A ... 2nd E'$$
+:Code: ''10-19'', In Help Files: ''A - E'''
+Calls the subroutine that starts at $$A$$ - $$2nd E'$$.
+==Example==
+*$$lrn 2nd lbl A + 1 = inv sbr lrn clr$$: @@0@@
+*$$A$$: @@1@@
+*$$A$$: @@2@@
+*$$A$$: @@3@@

@@ -1,0 +1,22 @@
+=ML-18: Compound Interest=
+
+==Compound Interest==
+Given a present value ''PV'', a number of periods ''N'' and an interest rate per period ''%I'', this program computes the future value ''FV''. If the ''FV'' is known, as well as 2 other parameters, this program will find the 4th parameter.
+
+Enter 3 of the 4 parameters as follows:
+
+* Number of periods N $$A$$
+* Interest rate per period %I $$B$$
+* Present value PV $$C$$
+* Future value FV $$D$$
+
+To compute the missing parameter, as a function of the 3 other parameters:
+* Press 0 and then $$A$$, $$B$$, $$C$$ or $$D$$, depending what the desired parameter is.
+
+==Example==
+
+Let's find out how much we can get, starting with $1000, at an annual interest of 5%, compunded daily. Note that the number of periods is 365, and that the interest rate per period is 5/365
+* 365 $$A$$
+* 5/365 = $$B$$
+* 1000 $$C$$
+* 0 $$D$$: @@1051.267496@@

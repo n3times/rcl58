@@ -1,0 +1,29 @@
+=ML-09: Integration (Continuous)=
+
+Given a function ''f(x)'' and 2 real numbers ''x0'' and ''xn'' (x0 < xn), this program computes an approximation of the integral of ''f'' in [x0, xn]
+
+The user should provide ''f'', ''x0'' and ''xn'' as well as an ''even'' number ''n'', used by the algorithm to determine how many points in [x0, xn] it will sample.
+
+To compute the integral of ''f'' in [x0, xn]:
+# Define ''f'' (see below)
+# ''x0'' $$A$$
+# ''xn'' $$B$$
+# ''n'' $$C$$ (n even)
+# $$D$$
+
+''Defining f:''
+As in '''ML-08''', ''f'' should be defined as a subroutine that starts with
+:$$2nd Lbl A' ($$ 
+and ends with
+:$$) INV SBR$$
+This subroutine should not use $$CLR$$ or $$=$$ as they will disturb the pending operations of the program, neither should it use any of the registers between 00 and 08.
+
+==Example==
+We wish to compute the integral of ''f(x) = x^4 + 1'' between 0 and 1:
+* $$LRN 2nd Lbl A' ( x2 x2 + 1 ) INV SBR LRN$$
+* $$0 A$$
+* $$1 B$$
+* $$10 C$$
+* $$D$$: @@1.200013333@@
+
+That's a very good approximation to the exact answer: 1/5 + 1 = 1.2

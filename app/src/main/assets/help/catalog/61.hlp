@@ -1,0 +1,6 @@
+=Goes to a given address=
+:$$GTO$$ '''address'''
+:Code: ''61'', In Help Files: ''GTO''
+==Example==
+*$$2nd cp lrn$$: @@000 00@@
+*$$gto 073 lrn$$: @@073 00@@

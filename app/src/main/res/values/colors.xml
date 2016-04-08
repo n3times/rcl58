@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nice_blue">#336699</color>
+    <color name="nice_green">#457045</color>
+    <color name="nice_orange">#D2691E</color>
+    <color name="onyx">#353839</color>
+    <color name="ios_light_gray">#aaaaaa</color>
+    <color name="ivory">#fffff0</color>
+    <color name="gold">#ffc200</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#1a1a1a</color>
+</resources>

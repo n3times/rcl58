@@ -1,0 +1,7 @@
+=Inverse modifier=
+:$$INV$$ '''key'''
+:Code: ''22'', In Help Files: ''INV''
+This modifier selects the inverse operation of a given operation.
+==Example==
+*$$1 lnx$$: @@0@@
+*$$1 inv lnx$$: @@2.718281828@@

@@ -1,0 +1,21 @@
+=ML-17: Moving Averages=
+
+Computes the average of the last n numbers entered:
+* $$2nd E'$$ initializes
+* n $$A$$
+* a_1 $$B$$
+* a_2 $$B$$
+* a_3 $$B$$
+* ...
+
+==Example==
+Moving average of the 3 most recent values in the sequence 17, 15, 19, 20, 12, 13, 18
+* $$2nd E'$$
+* 3 $$A$$
+* 17 $$B$$: @@17@@
+* 15 $$B$$: @@16@@
+* 19 $$B$$: @@17@@
+* 20 $$B$$: @@18@@
+* 12 $$B$$: @@17@@
+* 13 $$B$$: @@15@@
+* 18 $$B$$: @@14.33333333@@

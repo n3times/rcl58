@@ -1,0 +1,7 @@
+=Deselects the current module program, if any=
+:$$RST$$
+:Code: ''81'', In Help Files: ''RST''
+$$RST$$ also goes back to step 000 in the main program.
+==Example==
+*$$2nd cp gto 073 lrn$$: @@073 00@@
+*$$lrn rst lrn$$: @@000 00@@

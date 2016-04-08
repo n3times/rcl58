@@ -1,0 +1,29 @@
+==Version 1.2==
+
+New Features:
+* Updated for iOS 7
+* Added display of the current operation as entered by the user
+* Improvements in the emulator, notably its speed
+
+Bug Fixes:
+* Fixed issue with trigonometric functions in Radian mode
+* Fixed issue with international characters (non Latin) not always being properly rendered
+
+==Version 1.1.1==
+
+Fixed issue where (under certain conditions) the Master Library Module wouldn't correctly get loaded after a restart or reset.
+
+==Version 1.1==
+
+Added '''Settings''' screen:
+* Volume
+* Printer Speed
+* Click Indicator [
+Fixes and tweaks:
+* Printer stability issue (under iOS 6.x)
+* More '''Example Programs'''
+* Added '''Contact Info'''
+
+==Version 1.0==
+
+Initial Release

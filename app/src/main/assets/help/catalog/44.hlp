@@ -1,0 +1,6 @@
+=Modifies a given register by adding the value in the display to the register's value=
+:$$SUM$$ '''dd'''
+:Code: ''44'', In Help Files: ''SUM''
+$$INV Sum$$ modifies the value of the given register by substracting the value in the display to its value.
+==Example==
+*$$1 sto 00 2 sum 00 rcl 00$$: @@3@@

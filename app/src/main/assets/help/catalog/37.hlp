@@ -1,0 +1,9 @@
+=Converts from polar to rectangular coordinates=
+:$$2nd P/R$$
+:Code: ''37'', In Help Files: ''P/R''
+From '''radius''' $$x:t$$ '''angle''' to '''y''' $$x:t$$ '''x'''. $$INV 2nd P/R$$ converts from rectangular to polar coordinates, that is from '''x''' $$x:t$$ '''y''' to '''angle''' $$x:t$$ '''radius'''.
+==Example==
+*$$2nd deg 2 x:t 30 2nd P/R$$: @@1@@
+*$$x:t$$: @@1.732050808@@
+*$$inv 2nd p/r$$: @@30@@
+*$$x:t$$: @@2@@

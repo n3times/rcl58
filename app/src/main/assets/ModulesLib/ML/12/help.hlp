@@ -1,0 +1,25 @@
+=ML-12: Triangle Solution (2)=
+
+Given a triangle, we denote by a, b, c the lengths of its 3 sides, and by A, B, C its 3 angles, with A being opposite to a, B to b and C to c.
+
+==Knowing a, B and C==
+* Enter: a $$A$$, B $$B$$, C $$C$$
+* $$2nd A'$$ gives A
+* $$D$$ gives b
+* $$E$$ gives c
+
+==Knowing a, A and C==
+* Enter: a $$A$$, A $$B$$, C $$C$$
+* $$2nd B'$$ gives B
+* $$D$$ gives b
+* $$E$$ gives c
+
+==Compute Area==
+* a $$STO 01$$, b $$STO 02$$, c $$STO 07$$
+* $$2nd C'$$ gives the area
+
+==Example==
+* 5 $$A$$, 60 $$B$$, 60 $$C$$
+* $$2nd A'$$: @@60@@
+* $$D$$: @@5@@
+* $$E$$: @@5@@

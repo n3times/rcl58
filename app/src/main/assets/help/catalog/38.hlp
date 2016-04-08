@@ -1,0 +1,6 @@
+=Sine and its inverse=
+:$$2nd sin$$
+:Code: ''38'', In Help Files: ''sin''
+==Example==
+*$$2nd deg 90 2nd sin$$: @@1@@
+*$$inv 2nd sin$$: @@90@@

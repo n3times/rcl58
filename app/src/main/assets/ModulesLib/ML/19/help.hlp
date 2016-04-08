@@ -1,0 +1,48 @@
+=ML-19: Annuities=
+
+An annuity is a series of payments for a fixed amount '''PMT''' over regular intervals. We assume a fixed interest rate '''i''' per period.
+
+There are 2 different problems:
+# Determine the future value '''FV''' after '''n''' periods. That is how much money will finally result, assuming periodic payments with the parameters above. This is the typical situation in savings.
+# Determine the present value '''PV''', or, more generally, how this value depends on the other parameters. Imagine a bank giving a loan for an amount '''PV'''. The borrower will repay the bank '''PMT''' for '''n''' periods with a fixed interest rate '''i''' per period. Given 3 of these 4 parameters the problem is to determine the fourth. For example if we need $10,000 and want to make a monthly payment over a year and the interest is say 1% per month, we want to determine what the monthly payment should be. There is finally a fifth parameter in this problem, called a balloon payment '''BAL''' where in addition of the periodic '''PMT''', money is paid at the end of the loan.
+
+For both problems we distinguish 2 cases:
+# The payment is made at the end of the period: '''ordinary annuity'''
+# The payment is  made at the beginning of the period: '''annuity due'''
+
+''Note:'' Determining the future value in the ordinary annuity case is also called a '''Sinking Fund'''.
+
+== Procedure ==
+Initialize: $$2nd E'$$ and Select type:
+* Sinking Fund: $$2nd A'$$
+* Annuity Due/FV: $$2nd B'$$
+* Ordinary Annuity/PV: $$2nd C'$$
+* Annuity Due/PV: $$2nd D'$$
+Enter the known values. That is 4 values in the case of a PV situation (but do not enter the value of '''BAL''' if it's 0) and 3 of the first 4 variables in the case of an FV situation:
+* '''n''' $$A$$
+* '''I''' $$B$$ ('''I''' is in percent)
+* '''PMT''' $$C$$
+* '''PV''' or '''FV''' $$D$$
+* '''BAL''' $$E$$
+Solve for the unknown variable, with '''one''' of the following instructions:
+* 0 $$A$$: '''n'''
+* 0 $$B$$: '''i'''
+* 0 $$C$$: '''PMT'''
+* 0 $$D$$: '''PV'''
+* 0 $$E$$: '''BAL'''
+
+== Example ==
+We need to borrow $10,000 and want to make payments at the end of the month for a year. Assuming that the interest rate is 1% per month, how much money we will have to pay each month?
+Initialize and select Ordinary Annuity/PV:
+* $$2nd E'$$
+* $$2nd C'$$
+Enter the known values:
+* 12 $$A$$
+* 1 $$B$$
+* 10000 $$D$$
+Note that we have skipped:
+* '''PMT''' $$C$$, since '''PMT''' is the unknown
+* '''BAL''' $$E$$, since '''BAL''' is 0.
+Solve for '''PV''':
+* 0 $$C$$: @@888.49@@
+That is the monthly payment will be of $888.49

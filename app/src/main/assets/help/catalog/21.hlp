@@ -1,0 +1,6 @@
+=Selects the secondary function of a given key=
+:$$2nd$$ '''key'''
+:Code: ''21'', In Help Files: ''2nd''
+==Example==
+*$$10 lnx$$: @@2.302585093@@
+*$$10 2nd log$$: @@1@@

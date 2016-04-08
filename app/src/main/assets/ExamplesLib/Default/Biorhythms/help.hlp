@@ -1,0 +1,9 @@
+Given your date of birth and the current date, computes your physical, emotional and intellectual biorhythms.
+
+Each biorhythm is a number between -1 and 1.
+
+# Enter your ''date of birth'' in format '''mmdd.yyyy''' and press $$A$$
+# Enter ''today's date'' in format '''mmdd.yyyy''' and press $$B$$
+# Press $$C$$ for ''physical'' biorhythm
+# Press $$D$$ for ''emotional'' biorhythm
+# Press $$E$$ for ''intellectual'' biorhythm

@@ -1,0 +1,39 @@
+=ML-04: Complex Arithmetic=
+
+Given ''X = a + bi'' and ''Y = c + di'', this program computes the 4 arithmetic operations as well as the power, the inverse power, and the logarithm.
+
+==General Procedure==
+# Enter ''X'': ''a'' $$A$$ ''b'' $$A$$
+# Enter ''Y'': ''c'' $$2nd A'$$ ''d'' $$2nd A'$$
+# Perform operation by clicking on the appropriate user key (see below)
+# The display is the real part of the result. Press $$x:t$$ to get the imaginary part
+
+This is the mapping between function and user key:
+* $$B$$: ''X + Y''
+* $$2nd B'$$: ''X - Y''
+* $$C$$: ''X * Y''
+* $$2nd C'$$: ''X / Y''
+* $$D$$: ''Y^X''
+* $$2nd D'$$: ''log(X) in base Y''
+* $$E$$: ''Y^(1/X)''
+
+''Notes:''
+* The result becomes the new value of ''X'' while ''Y'' remains unchanged
+* $$2nd E'$$ exchanges ''X'' and ''Y''
+
+==Examples==
+To compute the square of ''1 + i'':
+* $$1 A 1 A$$
+* $$1 2nd A' 1 2nd A'$$
+* $$C$$: @@0@@
+* $$x:t$$: @@2@@
+
+That is ''(1 + i)(1 + i) = 2i''
+
+Alternatively, let's compute ''(1 + i)^2'':
+* $$2 A 0 A$$
+* $$1 2nd A' 1 2nd A'$$
+* $$D$$: @@1.7933547-12@@
+* $$x:t$$: @@2@@
+
+Note that the result is very close to ''2i'', but not quite the same, due to rounding errors in the intermediary computations.

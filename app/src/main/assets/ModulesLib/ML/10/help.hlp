@@ -1,0 +1,22 @@
+=ML-10: Integration (Discrete)=
+
+Given a function ''f(x)'' and 2 real numbers ''x0'' and ''xn'' (x0 < xn), this program computes an approximation of the integral of ''f'' in [x0, xn]
+
+The user should provide:
+* an ''even'' number ''n''
+* an increment ''h'': h = (xn - x0)/n
+* the value of ''f'' at f0, f1, ..., fn, where fi = f(x0 + i.h). That is the fi uniformly sample ''f'' in the interval [x0, xn]
+
+To compute the integral of ''f'' in [x0, xn]:
+# ''n'' $$A$$
+# ''h'' $$B$$
+# ''0'' $$C$$ (That is, we will start with f0)
+# $$f0 R/S f1 R/S ... fn R/S$$
+# $$D$$
+
+==Example==
+* $$4 A$$
+* $$1 B$$
+* $$0 C$$
+* $$0 R/S 1 R/S 4 R/S 9 R/S 16 R/S$$
+* $$D$$: @@21.33333333@@

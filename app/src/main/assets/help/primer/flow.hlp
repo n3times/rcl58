@@ -1,0 +1,60 @@
+==Addressing Modes==
+
+In our original '''Hello World''' program, we specified a label in our instruction:
+:$$GTO A$$
+Instead, we could have directly specified a step number, in this case:
+:$$GTO 002$$
+In the original calculator, this is done mainly for performance reasons, because it is faster to go directly to a step, without having to find the label first. In ''RCL 59'', this is not a real issue.
+
+A third way of addressing is ''indirect addressing'', through a register. This is more advanced and a little trickier. For example:
+:$$GTO 2nd ind 11$$
+means: '''Go to the step number specified in register 11'''. For example, if register 11 happens to hold the number 73:
+:$$GTO 2nd ind 11$$
+is the same as
+:$$GTO 073$$
+
+==Conditional Branching==
+
+Quite often one would like to go to a given step, if and only if some condition holds. For example, if the display reaches @@10@@, we may want to stop our '''Hello World''' program. This can be implemented as follows:
+
+:$$$Lbl A$$$
+:$$$x:t 10 x:t$$$
+:$$$+ 1 =$$$
+:$$$Pau$$$
+:$$$INV x=t A$$$
+:$$$R/S$$$
+
+The second line:
+:$$x:t 10 x:t$$
+looks a little confusing, but it just places $$$10$$$ in a special register '''T''', used for comparisons.
+
+Otherwise, this is very similar to the original program, except that we go to $$$A$$$ '''if and only if''' the display (register '''X''') is different from ''10'' (that is the number in register '''T'''):
+:$$INV 2nd x=t A$$
+Otherwise, in case of equality, we skip this step. Since the next step is $$R/S$$, we stop.
+
+Conditional branching is at the heart of programming because it makes arbitrary logic and therefore arbitrary computation possible. Besides $$2nd x=t$$, there is:
+:$$2nd x>t$$
+:$$2nd Dsz$$
+:$$2nd Iff$$.
+
+==Subroutines==
+
+A final important flow control operator is $$SBR$$. A subroutine is a sequence of steps that ends with $$INV SBR$$ (Which can also be written as $$$RTN$$$). It is also known as a (parameterless) function.
+
+It can be called from any piece of code. For example, consider:
+
+:$$$Lbl A$$$
+:$$$SBR SUM$$$
+:$$$Pau$$$
+:$$$GTO A$$$
+:$$$Lbl SUM$$$
+:$$$+ 1 =$$$
+:$$$INV SBR$$$
+
+In this case the subroutine starts at:
+:$$2nd Lbl SUM$$
+and ends with:
+:$$INV SBR$$
+It is called with:
+:$$SBR SUM$$
+which means: '''Go to label SUM and execute the next steps until reaching INV SBR. Then come back.''' In the above example, which is functionally equivalent to our original '''Hello World''', a subroutine may be overkill. But, in more complex situations, subroutines allow to write code in a modular and cleaner way.

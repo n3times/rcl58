@@ -1,0 +1,4 @@
+=Single step forward=
+:$$SST$$
+:Code: ''41'', In Help Files: ''SST''
+Used in '''LRN Mode''' to browse the program. In '''Normal Mode''', executes a single step of the program. The program pointer moves accordingly.

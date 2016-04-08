@@ -1,0 +1,17 @@
+=ML-24: Length Conversions=
+
+Converts a length from one unit to another:
+:$$A$$: inches -> centimeters
+:$$2nd A'$$: centimeters -> inches
+:$$B$$: feet -> meters
+:$$2nd B'$$: meters -> feet
+:$$C$$: yards -> meters
+:$$2nd C'$$: meters -> yards
+:$$D$$: miles -> kilometers
+:$$2nd D'$$: kilometers -> miles
+:$$E$$: miles -> nautical miles
+:$$2nd E'$$: nautical miles -> miles
+
+==Example==
+:$$40000 2nd D'$$: @@24854.84769@@
+That is, the circumference of the Earth is roughly 24,855 miles.

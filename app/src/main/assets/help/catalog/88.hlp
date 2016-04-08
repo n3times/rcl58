@@ -1,0 +1,8 @@
+=Converts a number, given in degrees, minutes and seconds, into a fractional number=
+:$$2nd DMS$$
+:Code: ''88'', In Help Files: ''DMS''
+$$INV 2nd DMS$$ does the reverse conversion.
+Note: Due to rounding effects (in the emulator as well as in the actual calculator) the displayed result may show as '''x''' minutes and '''60''' seconds, instead of '''x + 1''' minutes. For example: $$0.08 dms 2nd dms$$: @@0.076@@
+==Example==
+*$$3.15 2nd dms$$: @@3.25@@
+*$$inv 2nd dms$$: @@3.15@@

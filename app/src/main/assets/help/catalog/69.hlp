@@ -1,0 +1,44 @@
+=Performs one of 40 special operations=
+:$$2nd Op$$ '''dd'''
+:Code: ''69'', In Help Files: ''Op''
+The selected operation depends on the argument:
+:''00'': Clears the alpha registers
+:''01'': Sets characters 1 thru 5 of the alpha register
+:''02'': Sets characters 6 thru 10 of the alpha register
+:''03'': Sets characters 11 thru 15 of the alpha register
+:''04'': Sets characters 16 thru 20 of the alpha register
+:''05'': Prints the alpha register
+:''06'': Prints the display as well as characters 16 thru 20 of the alpha register
+:''07'': Prints an asterix at the position given by display value (0 to 19)
+:''08'': Prints a list of the labels used in program
+:''09'': Loads current module program into memory
+:''10'': Computes the sign of the display (-1, 0 or 1)
+:''11'': Computes the variance of the numbers (points) entered through $$$S+$$$
+:''12'': Computes b (and a by pressing $$$x:t$$$) in the least squares regression line y=ax+b of the points (x_i, y_i) entered through x_i $$$x:t$$$ y_i $$$S+$$$.
+:''13'': Computes the correlation (between -1 and 1) among the x_i's and y_i's
+:''14'': Estimates y given x, where x is the value in the display, by returning y such that (x, y) is in the regression line
+:''15'': Estimates x given y, where y is the value in the display, by returning x such that (x, y) is in the regression line
+:''16'': In this emulator, displays @@@999.99@@@, given the index of the last step and of the last register
+:''17'': A non operation in this emulator. Used to partition between steps and registers, in the real calculator
+:''18'': If there is no error, raises Flag 7
+:''19'': If there is an error, raises Flag 7
+:''20-29'': Increments by 1 one of the registers 00 thru 09
+:''30-39'': Decrements by 1 one of registers 00 thru 09
+The following table gives show how each character is represented as a 2-digit number (for example 37 -> 'T'):
+: &&                    &&
+: &&    0 1 2 3 4 5 6 7 &&
+: &&                    &&
+: && 0    0 1 2 3 4 5 6 &&
+: && 1  7 8 9 A B C D E &&
+: && 2  - F G H I J K L &&
+: && 3  M N O P Q R S T &&
+: && 4  . U V W X Y Z + &&
+: && 5  x * v p e ( ) , &&
+: && 6  ^ % : / = ' ` a &&
+: && 7  " ? | ! # _ n s &&
+: &&                    &&
+==Example==
+*$$2nd Op 00 3724 2nd Op 04 59 2nd Op 06$$: &&         59.      TI&&
+*$$2 +/- 2nd op 10$$: @@-1@@
+*$$2nd Pgm 01 sbr clr 1 x:t 2 2nd S+ 3 x:t 6 2nd S+ 10 2nd op 14$$: @@20@@
+*$$0 STO 00 2nd OP 20 RCL 00$$: @@1@@

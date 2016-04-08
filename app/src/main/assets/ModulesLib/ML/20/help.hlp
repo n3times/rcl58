@@ -1,0 +1,21 @@
+=ML-20: Day of the Week=
+
+==Day of the Week==
+
+* Write day in '''mmdd.yyyy''' format, for example @@1105.1955@@, for November 5th 1955
+* Press $$D$$ to get the day of the week
+
+A number between 0 and 6 will be displayed:
+* 0: Saturday
+* 1: Sunday
+* 2: Monday
+* 3: Tuesday
+* 4: Wednesday
+* 5: Thursday
+* 6: Friday
+
+==Days between 2 dates==
+
+* Enter date 1 ('''mmdd.yyyy'''), $$A$$
+* Enter date 2 ('''mmdd.yyyy'''), $$B$$
+* Press $$C$$: number of days between the 2 dates

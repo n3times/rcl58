@@ -1,0 +1,6 @@
+=Modifies the value of a given register by multiplying its value with the value in the display=
+:$$2nd Prd$$ '''dd'''
+:Code: ''49'', In Help Files: ''Prd''
+$$INV 2nd Prd$$ modifies the value of the given register by dividing its value by the value in the display.
+==Example==
+*$$2 sto 00 3 2nd prd 00 rcl 00$$: @@6@@
